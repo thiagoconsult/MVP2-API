@@ -86,25 +86,6 @@ async def get_lista_terefa():
 
 
 #############################################################################
-# GET - Tarefa por ID
-#############################################################################
-@app.get(
-    '/tarefa',
-    summary='GET Tarefa por ID',
-    description='Método para busca de uma tarefa pelo ID',
-    tags=["Tarefa"],
-    status_code=status.HTTP_200_OK,
-    response_model=Tarefa
-)
-async def get_tarefa_por_id(id: int):
-
-    tarefa = session.get(Tarefa, {id})
-    if tarefa == None:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail='Tarefa não encontrada')
-    return tarefa
-
-
-#############################################################################
 # PUT - Update Tarefa por ID
 #############################################################################
 @app.put(
