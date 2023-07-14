@@ -35,6 +35,11 @@ Quando a virtual env estiver ativa, irá aparecer antes do caminho do projeto no
 pip install -r requirements.txt
 ```
 
+### RESOLVENDO BUG DO VSCODE
+
+Após executar o procedimento acima, feche a pasta do projeto e abra novamente, ou feche o VSCode e abra novamente, pois, só assim irá reconhecer as libs do FastAPI.
+
+
 Para executar, se estiver utilizando o VSCode, abra o arquivo main.py e utilize o atalho CTRL+F5 ou se estiver utilizando outro IDE de desenvolvimento
 procure nas opções do menu a opção de executar/rodar. Em seguida, abra o seu navegador e cole o endereço da API para ver a documentação:
 ```
